@@ -8,7 +8,11 @@ function App() {
   // let counter = 5
   const incValue = () => {
       if (counter < 20) {
-      setCounter(counter + 1)
+      // setCounter(counter + 1)
+      setCounter(prevCount => prevCount + 1)
+      setCounter(prevCount => prevCount + 1)
+      setCounter(prevCount => prevCount + 1)
+      setCounter(prevCount => prevCount + 1)
       }
   }
 
