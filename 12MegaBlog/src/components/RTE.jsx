@@ -10,9 +10,13 @@ export default function RTE({ name, control, label, defaultValue = '' }) {
             <Controller
                 name={name || "content"}
                 control={control}
-                render={({ field: { onChange } }) => (
+                defaultValue={defaultValue}
+                render={({ field: { onChange, value } }) => (
                     <Editor
-                        nitialValue={defaultValue}
+                        // initialValue={defaultValue}
+                        apiKey="YOUR_API_KEY"
+                        onEditorChange={onChange}
+                        value={value}
                         init={{
                             initialValue: defaultValue,
                             height: 500,
@@ -42,7 +46,6 @@ export default function RTE({ name, control, label, defaultValue = '' }) {
                             toolbar: "undo redo | blocks | image | bold italic forecolor | alignleft aligncenter bold italic forecolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent |removeformat | help",
                             content_style: "body { font-family:Helvetica,Arial,sans-serif; font-size:14px }"
                         }}
-                        onEditorChange={onChange}
                     />
                 )}
             />
