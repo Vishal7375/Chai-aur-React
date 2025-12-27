@@ -2,6 +2,7 @@ import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import Container from "./container/container";
 import Logo from "./Logo";
+import BlogImg from "../img/Blog.jpg"
 import LogoutBtn from "./Header/LogoutBtn";
 import RTE from "./RTE";
 import Signup from "./SignUp";
@@ -19,6 +20,7 @@ export {
     Footer,
     Container,
     Logo,
+    BlogImg,
     LogoutBtn,
     RTE,
     Signup,

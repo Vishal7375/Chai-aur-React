@@ -33,8 +33,8 @@ function App() {
   // )
 
   return !loading ? (
-    <div className='min-h-screen flex flex-wrap content-between bg-gray-400'>
-      <div className='w-full block'>
+    <div className='min-h-screen flex flex-wrap content-between bg-gray-900'>
+      <div className='w-full block space-y-21'>
         <Header />
         <main>
           <Outlet />
