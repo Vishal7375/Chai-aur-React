@@ -20,7 +20,7 @@ function App() {
         }
       })
       .finally(() => setLoading(false));
-  }, []);
+  }, [dispatch]);
 
   // if (loading) {
   //   return <div>Loading...</div>;
